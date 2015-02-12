@@ -7,11 +7,9 @@ diag '';
 diag '';
 diag '';
 
-diag "bzlibVersion = " . Compress::Raw::Bzip2::FFI::bzlibVersion();
+diag "bzlibVersion = " . Compress::Raw::Bzip2::FFI::bzlibversion();
 
 diag '';
 diag '';
 
-# check the compat function name
-is Compress::Raw::Bzip2::FFI::bzlibVersion(),
-   Compress::Raw::Bzip2::FFI::bzlibversion();
+pass 'good';
